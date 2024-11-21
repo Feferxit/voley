@@ -1,143 +1,197 @@
-/* Configurações gerais */
+/* Estilos gerais */
 body {
-    background-color: #897098;
-    color: black;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  .logo {
-    width: 150px;
-    height: 150px;
-    position: fixed;
-    top: 0;
-  }
-  .search-bar-container {
-    position: fixed;  /* Mantém a barra de pesquisa fixa no topo */
-    top: 10px;        /* Ajuste este valor para a altura desejada */
-    left: 50%;        /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição para centralizar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;      /* Para garantir que ocupe toda a largura */
-    padding: 10px;    /* Adiciona espaçamento */
+  font-family: 'Arial', sans-serif;
+  background-color: #917bc2; /* Roxo */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
 }
 
-.search-bar-container {
-  position: fixed;  
-  top: 10px;        
-  left: 50%;        
-  transform: translateX(-50%); 
+/* Navbar */
+.navbar {
+  background-color: #8c7ace; /* Preto */
+  padding: 20px 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;      
-  padding: 10px;    
-  z-index: 1000; /* Garante que a barra de pesquisa esteja acima de outros elementos */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
+.navbar .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
 
-.search-bar {
-  width: 90%;
-  max-width: 400px;
+.navbar ul {
+  list-style: none;
   display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  color: rgb(78, 14, 161);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #391652; /* Roxo claro para hover */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 25px; /* Arredondamento das bordas */
-  overflow: hidden;
-  border: 1px solid #cbc1d2; /* Borda da barra de pesquisa */
-  background-color: #cbc1d2; /* Altere para a cor desejada */
-  color: black;
+  background-color: #8c7ace; /* Preto */
+  padding: 120px 40px;
+  position: relative;
 }
 
-.search-input {
-  flex: 1;
-  padding: 10px;
-  border: none; /* Remova a borda padrão do input */
-  font-size: 16px;
-  background-color: transparent; /* Para que o fundo do input seja transparente */
+.hero-content {
+  max-width: 500px;
 }
 
-.search-icon {
-  padding: 10px;
-  background-color: #36164d; /* Cor de fundo do ícone */
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000000; /* Roxo claro */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #461b7e; /* Roxo claro */
+  color: rgb(255, 255, 255);
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.search-icon img {
-  width: 20px;
-  height: 20px;
+.cta-btn:hover {
+  background-color: #000000; /* Roxo mais escuro */
 }
 
-  /* Menu Sanduíche */
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    margin-top: 200px; /* Espaço de 50px a partir do topo */
-  }
-  
-  .menu-btn {
-    font-size: 24px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-  }
-  
-  .menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none; /* Menu escondido por padrão */
-    overflow: hidden;
-    transition: max-height 0.3s ease; /* Transição para abrir suavemente */
-    max-height: 0; /* Altura inicial zero para animação */
-  }
-  
-  .menu-list.open {
-    display: block;
-    max-height: 300px; /* Define uma altura máxima quando aberto (ajuste conforme necessário) */
-  }
-  
-  .menu-list li {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .menu-list a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .menu-list img {
-    width: 20px;
-    height: 20px;
-  }
+.hero-image {
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 300px;
+}
 
-  .carrossel {
-    position: relative;
-    padding: 100px;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+/* Destaques */
+.highlights {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.highlight-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.highlight-card {
+  background-color: #7e1dff; /* Preto */
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-card h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.highlight-card p {
+  color: white;
+}
+
+.highlight-btn {
+  background-color: #7e1dff; /* Roxo claro */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.highlight-btn:hover {
+  background-color: #5e14b3; /* Roxo mais escuro */
+}
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .imagens {
-    display: flex;
-    transition: transform 0.5s ease;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  position: relative;
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 .imagem {
-    min-width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px; /* Estético */
 }
 
-@media (max-width: 600px) {
-    .carrossel {
-        max-width: 100%;
-    }
+.texto-sobre-imagem {
+  position: absolute;
+  bottom: 20px; /* Alinhado ao fundo da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.texto-sobre-imagem h2 {
+  font-size: 1.5rem;
+  margin: 0 0 5px;
+}
+
+.texto-sobre-imagem p {
+  font-size: 1rem;
+  margin: 0;
 }
