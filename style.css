@@ -149,49 +149,49 @@ body {
 }
 
 .carrossel {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .imagens {
-  display: flex;
-  transition: transform 0.5s ease;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .slide {
-  position: relative;
-  min-width: 100%;
-  box-sizing: border-box;
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .imagem {
-  width: 100%;
-  border-radius: 10px; /* Estético */
+    width: 100%;
+    border-radius: 10px; /* Estético */
 }
 
 .texto-sobre-imagem {
-  position: absolute;
-  bottom: 20px; /* Alinhado ao fundo da imagem */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  max-width: 80%;
+    position: absolute;
+    bottom: 20px; /* Alinhado ao fundo da imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 80%;
 }
 
 .texto-sobre-imagem h2 {
-  font-size: 1.5rem;
-  margin: 0 0 5px;
+    font-size: 1.5rem;
+    margin: 0 0 5px;
 }
 
 .texto-sobre-imagem p {
-  font-size: 1rem;
-  margin: 0;
+    font-size: 1rem;
+    margin: 0;
 }
