@@ -1,7 +1,7 @@
 /* Estilos gerais */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #917bc2; /* Roxo */
+  background-color: #9279ba; /* Roxo */
   color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
@@ -20,27 +20,89 @@ body {
   z-index: 10;
 }
 
-.navbar .logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
+.search-bar-container {
+  position: fixed;  /* Mantém a barra de pesquisa fixa no topo */
+  top: 10px;        /* Ajuste este valor para a altura desejada */
+  left: 50%;        /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para centralizar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;      /* Para garantir que ocupe toda a largura */
+  padding: 10px;    /* Adiciona espaçamento */
 }
 
-.navbar ul {
+.search-bar-container {
+position: fixed;  
+top: 10px;        
+left: 50%;        
+transform: translateX(-50%); 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;      
+padding: 10px;    
+z-index: 1000; /* Garante que a barra de pesquisa esteja acima de outros elementos */
+}
+
+
+.search-bar {
+width: 90%;
+max-width: 400px;
+display: flex;
+align-items: center;
+border-radius: 25px; /* Arredondamento das bordas */
+overflow: hidden;
+border: 1px solid #cbc1d2; /* Borda da barra de pesquisa */
+background-color: #cbc1d2; /* Altere para a cor desejada */
+color: black;
+}
+
+.search-input {
+flex: 1;
+padding: 10px;
+border: none; /* Remova a borda padrão do input */
+font-size: 16px;
+background-color: transparent; /* Para que o fundo do input seja transparente */
+}
+
+.search-icon {
+padding: 10px;
+background-color: #36164d; /* Cor de fundo do ícone */
+cursor: pointer;
+}
+
+.search-icon img {
+width: 20px;
+height: 20px;
+}
+
+.navbar .logo {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+  }
+
+.navbar .menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-.navbar li a {
-  color: rgb(78, 14, 161);
+.navbar .ff-btn {
+  background-color: #694499; /* Roxo claro */
+  color: rgb(255, 253, 253);
+  padding: 6px 7px;
   font-size: 1.1rem;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.navbar li a:hover {
-  color: #391652; /* Roxo claro para hover */
+.navbar .ff-btn:hover {
+  background-color: #000000; /* Roxo mais escuro */
 }
 
 /* Hero Section */
@@ -134,7 +196,7 @@ body {
 }
 
 .highlight-btn {
-  background-color: #7e1dff; /* Roxo claro */
+  background-color: #9279ba; /* Roxo claro */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -145,13 +207,14 @@ body {
 }
 
 .highlight-btn:hover {
-  background-color: #5e14b3; /* Roxo mais escuro */
+  background-color: #9279ba; /* Roxo mais escuro */
 }
 
 .carrossel {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
+    max-height: 600px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -165,6 +228,7 @@ body {
 .slide {
     position: relative;
     min-width: 100%;
+    min-height: 100%;
     box-sizing: border-box;
 }
 
