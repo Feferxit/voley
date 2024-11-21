@@ -3,172 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vôlei News</title>
-    <link rel="icon" href="logozinha.png" sizes="16x16" type="image/x-icon"> <!-- Padrão -->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Para navegadores mais antigos -->
-<link rel="apple-touch-icon" href="images/favicon.png"> <!-- Para dispositivos Apple -->
-
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-    <div class="search-bar-container">
-        <div class="search-bar">
-          <input type="text" class="search-input" placeholder="Buscar...">
-          <div class="search-icon">
-            <img src="pesquisa.png" alt="Buscar">
-          </div>
-        </div>
-      </div>
-    <div>
-    <!-- Navbar -->
-    <header class="navbar">
-            <img class="logo" src="loginha.png" alt="img">
-          </div>
-      <nav>
-        <div class="menu">
-            <button class="ff-btn">Home</button>
-            <button class="ff-btn">Jogos</button>
-            <button class="ff-btn">Times</button>
-            <button class="ff-btn">Eventos</button>
-            <button class="ff-btn">Parcerias</button>
-            <button class="ff-btn">Login</button>
-            <button class="ff-btn">Cadastre-se</button>
-        </div>
-    </nav>
-</header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Últimas do Vôlei</h1>
-            <p>Fique por dentro das atualizações do mundo do vôlei.</p>
-            <button class="cta-btn">Veja Agora</button>
-        </div>
-        <div id="carrossel1" class="carrossel">
-          <div class="imagens">
-              <div class="slide">
-                  <img class="imagem" src="WhatsApp Image 2024-11-07 at 15.22.07.jpeg" alt="Imagem 1">
-                  <div class="texto-sobre-imagem">
-                      <h2>Notícia 1</h2>
-                      <p>Atualizações sobre a última rodada de vôlei.</p>
-                  </div>
-              </div>
-              <div class="slide">
-                  <img class="imagem" src="WhatsApp Image 2024-11-07 at 15.22.06.jpeg" alt="Imagem 2">
-                  <div class="texto-sobre-imagem">
-                      <h2>Notícia 2</h2>
-                      <p>Campeonatos mundiais em destaque.</p>
-                  </div>
-              </div>
-              <div class="slide">
-                  <img class="imagem" src="WhatsApp Image 2024-11-07 at 15.22.06 (2).jpeg" alt="Imagem 3">
-                  <div class="texto-sobre-imagem">
-                      <h2>Notícia 3</h2>
-                      <p>Entrevista com o jogador destaque do torneio.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-    </section>
-
-    <!-- Notícias em Destaque -->
-    <section class="highlights">
-        <h2>Destaques</h2>
-        <div class="highlight-cards">
-            <div class="highlight-card">
-                <h3>Notícia 1</h3>
-                <p>Detalhes da última rodada de vôlei.</p>
-                <button class="highlight-btn">Leia Mais</button>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">welcome back!</h2>
+                <p class="description description-primary">To keep connected with us</p>
+                <p class="description description-primary">please login with your personal info</p>
+                <button id="signin" class="btn btn-primary">sign in</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">create account</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">or use your email for registration:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">sign up</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">hello, friend!</h2>
+                <p class="description description-primary">Enter your personal details</p>
+                <p class="description description-primary">and start journey with us</p>
+                <button id="signup" class="btn btn-primary">sign up</button>
             </div>
-            <div class="highlight-card">
-                <h3>Notícia 2</h3>
-                <p>Atualizações dos campeonatos mundiais.</p>
-                <button class="highlight-btn">Leia Mais</button>
-            </div>
-            <div class="highlight-card">
-                <h3>Notícia 3</h3>
-                <p>Entrevista com o jogador X.</p>
-                <button class="highlight-btn">Leia Mais</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Navbar -->
-    <header class="navbar">
-        <div>
-            <img class="logo" src="loginha.png" alt="img">
-          </div>
-        <nav>
-            <div class="menu">
-                <button class="ff-btn">Home</button>
-                <button class="ff-btn">Jogos</button>
-                <button class="ff-btn">Times</button>
-                <button class="ff-btn">Eventos</button>
-                <button class="ff-btn">Parcerias</button>
-                <button class="ff-btn">Login</button>
-                <button class="ff-btn">Cadastre-se</button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Novidades do Mundo do Vôlei</h1>
-            <p>Fique por dentro de tudo o que acontece no vôlei.</p>
-            <button class="cta-btn">Veja os Jogos</button>
-        </div>
-        <div id="carrossel2" class="carrossel">
-          <div class="imagens">
-              <div class="slide">
-                  <img class="imagem" src="WhatsApp Image 2024-11-07 at 15.22.07.jpeg" alt="Imagem 1">
-                  <div class="texto-sobre-imagem">
-                      <h2>Notícia 1</h2>
-                      <p>Atualizações sobre a última rodada de vôlei.</p>
-                  </div>
-              </div>
-              <div class="slide">
-                  <img class="imagem" src="WhatsApp Image 2024-11-07 at 15.22.06.jpeg" alt="Imagem 2">
-                  <div class="texto-sobre-imagem">
-                      <h2>Notícia 2</h2>
-                      <p>Campeonatos mundiais em destaque.</p>
-                  </div>
-              </div>
-              <div class="slide">
-                  <img class="imagem" src="WhatsApp Image 2024-11-07 at 15.22.06 (2).jpeg" alt="Imagem 3">
-                  <div class="texto-sobre-imagem">
-                      <h2>Notícia 3</h2>
-                      <p>Entrevista com o jogador destaque do torneio.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-    </section>
-
-    <!-- Notícias em Destaque -->
-    <section class="highlights">
-
-        <h2>Destaques</h2>
-        <div class="highlight-cards">
-            <div class="highlight-card">
-                <h3>Notícia 1</h3>
-                <p>Últimos resultados da Liga Nacional.</p>
-                <button class="highlight-btn">Leia mais</button>
-            </div>
-            <div class="highlight-card">
-                <h3>Notícia 2</h3>
-                <p>Jogador X faz história no campeonato.</p>
-                <button class="highlight-btn">Leia mais</button>
-            </div>
-            <div class="highlight-card">
-                <h3>Notícia 3</h3>
-                <p>Entrevista com a estrela do time Y.</p>
-                <button class="highlight-btn">Leia mais</button>
-            </div>
-        </div>
-    </section>
-    <script src="script.js"></script>
+            <div class="second-column">
+                <h2 class="title title-second">sign in to developer</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">or use your email account:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">forgot your password?</a>
+                    <button class="btn btn-second">sign in</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
